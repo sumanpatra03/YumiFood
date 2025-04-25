@@ -1,0 +1,75 @@
+.carousel-img {
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+  }
+  
+  .side-icon {
+    margin-left: 10%;
+  }
+  
+  .angle-icon {
+    margin-right: 10%;
+  }
+  
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .caption h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-img {
+      height: 50vh;
+    }
+  
+    .overlay {
+      border-radius: 10px;
+    }
+  
+    .side-icon,
+    .angle-icon {
+      margin: 0 5%;
+    }
+  
+    .caption h3 {
+      font-size: 1.2rem;
+      font-family: 'Poppins', sans-serif; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-img {
+      height: 40vh;
+    }
+  
+    .overlay {
+      border-radius: 8px;
+    }
+  
+    .caption h3 {
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif; 
+    }
+  }
+  
